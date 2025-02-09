@@ -1,0 +1,117 @@
+/* Général */
+
+.menu-option {
+    color: cyan;
+    cursor: pointer;
+}
+body {
+    background-color: #000;
+    color: #33ff33;
+    font-family: "Courier New", monospace;
+    text-align: center; /* Centrer tout le texte dans le body */
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Bio */
+.bio {
+    margin-top: 20px;
+    font-size: 18px;
+    border-left: 2px solid #33ff33;
+    padding-left: 10px;
+    text-align: left;
+    width: 50%;
+    margin-bottom: 10px; /* Pour espacer légèrement le texte suivant */
+}
+
+/* Effet boot screen */
+.boot-screen {
+    font-size: 16px;
+    text-align: left;
+    padding: 20px;
+    height: 40vh;
+    position: absolute; /* Positionnement absolu */
+    top: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Centrage précis */
+    overflow: hidden;
+}
+
+.done {
+    color: #00ff00;
+}
+
+.press-enter {
+    color: #ff0000;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+/* Disparition après boot */
+.hide {
+    display: none;
+}
+
+/* Animation clignotement */
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* About Me Section */
+.about-me {
+    display: none; /* Caché au début */
+    flex-direction: column;
+    align-items: left;
+    padding: 40px;
+    height: 100vh;
+}
+
+/* ASCII Art */
+.ascii-name pre {
+    font-size: 14px;
+    color: cyan;
+    /*text-shadow: 0 0 5px #33ff33;*/
+    /*animation: glitch 1s infinite alternate;*/
+}
+
+/* Effet glitch */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #ff00ff; }
+    100% { text-shadow: -2px -2px #00ffff; }
+}
+
+/* Machine à écrire */
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #33ff33;
+    width: 0;
+    animation: typing 3s steps(40, end) forwards;
+}
+
+/* Animation écriture */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Texte suivant (qui apparaît après l'effet de machine à écrire) */
+.next-text {
+    display: none; /* Caché par défaut */
+    color: white; /* Couleur du texte */
+    font-size: 15px; /* Taille de la police */
+    text-align: left; /* Alignement du texte */
+    white-space: pre-wrap; /* Respecte les sauts de ligne et passe à la ligne automatiquement */
+    word-wrap: break-word; /* Casse les mots longs si nécessaire */
+    overflow-wrap: break-word; /* Alternative à word-wrap pour certains navigateurs */
+    position: fixed; /* Position fixe pour couvrir toute la page */
+    /*top: 0; /* Commence en haut de la page */
+    /*left: 20; /* Commence à gauche de la page */
+    width: 98%; /* Prend toute la largeur de la page */
+    height: 100%; /* Prend toute la hauteur de la page */
+    padding: 20px; /* Ajoute un peu d'espace intérieur */
+    box-sizing: border-box; /* Inclut le padding dans la largeur/hauteur */
+    background-color: rgba(0, 0, 0, 0.9); /* Fond noir semi-transparent */
+    overflow-y: auto; /* Ajoute une barre de défilement si le texte dépasse */
+    z-index: 1; /* Place .next-text en arrière-plan */
+}

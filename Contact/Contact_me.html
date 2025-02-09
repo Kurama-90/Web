@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Icône de retour à la page d'accueil -->
+    <a href="..\index.html" class="home-icon">
+        <img src="home.png" alt="Accueil">
+    </a>
+
+    <!-- Image en haut -->
+    <img src="MR.jpg" alt="Image Top" class="img-top">
+
+    <!-- Liens sociaux -->
+    <div class="social-links">
+        <a href="https://facebook.com/tonprofil" target="_blank" class="social-icon">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="https://linkedin.com/in/tonprofil" target="_blank" class="social-icon">
+            <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Kurama-90" target="_blank" class="social-icon">
+            <img src="github.png" alt="GitHub">
+        </a>
+    </div>
+
+    <!-- Conteneur du formulaire -->
+    <div class="contact-container">
+        <form class="contact-form" action="https://formspree.io/f/mnnjzlkn" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="2" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+</body>
+</html>

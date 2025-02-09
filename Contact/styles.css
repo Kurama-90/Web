@@ -1,0 +1,130 @@
+/* Style général */
+body {
+    background-color: #000;
+    color: #ff3333;
+    font-family: "Courier New", monospace;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Image en haut */
+.img-top {
+    width: 18%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+/* Liens sociaux */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Icônes sociales */
+.social-icon {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #ff3333; /* Change la couleur du lien */
+}
+
+/* Icônes sociales - images */
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+/* Effet au survol */
+.social-icon:hover {
+    color: #ff3333; /* Change la couleur au survol */
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #ff3333 ); /* Glow bleu */
+}
+
+
+
+/* Conteneur du formulaire */
+.contact-container {
+    width: 25%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #ff3333;
+    background-color: #111;
+    box-shadow: 0 0 10px #ff3333;
+}
+
+/* Formulaire */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Labels */
+.contact-form label {
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    max-width: 280px;
+}
+
+/* Champs de texte */
+.contact-form input, .contact-form textarea {
+    width: 90%;
+    max-width: 280px;
+    padding: 8px;
+    font-size: 14px;
+    color: #ff3333;
+    background-color: #000;
+    border: 1px solid #ff3333;
+    outline: none;
+}
+
+/* Effet survol */
+.contact-form input:hover, .contact-form textarea:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 5px #ffffff ;
+}
+
+/* Bouton */
+.contact-form button {
+    background-color: #ffffff;
+    color: black;
+    font-size: 12px;
+    padding: 4px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff3333;
+    color: black;
+}
+
+/* Icône de retour à l'accueil */
+.home-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 50px;  /* Taille de l'icône */
+    height: 50px;
+}
+
+.home-icon img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain; /* Ajuste l'image sans la déformer */
+    transition: transform 0.3s ease; /* Effet au survol */
+}
+
+.home-icon:hover img {
+    transform: scale(1.1); /* Légère animation au survol */
+}
