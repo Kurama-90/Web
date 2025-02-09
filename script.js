@@ -36,7 +36,7 @@ const input = document.getElementById('input');
 const commands = [
     '<br>Welcome to the Matrix !<br> <br>Hi there, I m Mohamed Hamed.<br>I m from a technical background in electromechanics, with a passion for programming, specializing in data science, automation, open source, and web development. I love turning complex problems into elegant solutions through code. Let s build something amazing together! 🚀<br> <br>',
     'Programming Languages :<br>Python / JavaScript / VBA / C# / VB.NET<br> <br>Web Development :<br>HTML / PHP / CSS / Flask / FastAPI<br> <br>Automation & Tools :<br>Batch / Scripting / Excel / Macro / Git / GitHub',
-    '<br>Menu :   <br><br><span class="menu-option" onclick="navigateTo(\'About/About_me.html\')">About me</span> <br><br> <span class="menu-option" onclick="navigateweb(\'https://www.github.com/Kurama-90\')">Projects</span> <br><br> <span class="menu-option" onclick="navigateTo(\'contact/Contact_me.html\')">Contact</span>',
+    '<br>Menu :   <br><br><span class="menu-option" onclick="navigateTo(\'About/About_me.html\')">About me</span> <br><br> <span class="menu-option" onclick="navigateweb(\'https://www.github.com/Kurama-90\')">Projects</span> <br><br> <span class="menu-option" onclick="navigateTo(\'Contact/Contact_me.html\')">Contact</span>',
     '<br>C:\\Users\\Utilisateur&gt; _'
 ];
 
